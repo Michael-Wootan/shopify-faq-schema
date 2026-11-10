@@ -1,0 +1,18 @@
+{
+  "name": "shopify-faq-schema",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Gives every Shopify product a set of FAQs as metaobjects, chosen by product category, and renders them as FAQPage structured data in the theme.",
+  "main": "src/generate-faqs.js",
+  "engines": { "node": ">=20" },
+  "scripts": {
+    "audit": "node src/generate-faqs.js --audit",
+    "generate": "node src/generate-faqs.js",
+    "schema:preview": "node src/inject-faq-schema.js --dry-run",
+    "schema": "node src/inject-faq-schema.js",
+    "test": "node scripts/test-faqs.js"
+  },
+  "dependencies": {
+    "dotenv": "^17.3.1"
+  }
+}

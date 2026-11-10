@@ -1,0 +1,9 @@
+node_modules/
+.env
+.env.*
+!.env.example
+state/
+backups/
+config/faq-library.json
+*.log
+.DS_Store

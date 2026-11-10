@@ -1,0 +1,42 @@
+{
+  "brand": "Acme Supply Co.",
+  "skipHandles": ["gift-card"],
+  "categories": [
+    {
+      "name": "wholesale",
+      "match": { "wholesale": true },
+      "faqs": [
+        { "question": "What is the minimum order for wholesale coffee?", "answer": "Wholesale orders from {brand} start at one case. Volume pricing applies from the second case, and a quote for larger standing orders is available on request." },
+        { "question": "How fresh is wholesale coffee when it arrives?", "answer": "Wholesale orders are roasted after the order is placed, not pulled from stock. Each bag carries its roast date so you can rotate inventory." },
+        { "question": "Can {title} be supplied on a recurring schedule?", "answer": "Yes. Cafes and offices can set a weekly or fortnightly schedule, and quantities can be changed before each roast day." }
+      ]
+    },
+    {
+      "name": "decaf",
+      "match": { "any": ["decaf"] },
+      "faqs": [
+        { "question": "How is decaf coffee made?", "answer": "Decaf is made by removing caffeine from green coffee before roasting. {title} uses a water process, which removes caffeine without chemical solvents." },
+        { "question": "Is decaf coffee completely caffeine free?", "answer": "No. Decaffeination removes most of the caffeine but a small amount remains in every cup." },
+        { "question": "Does decaf taste different from regular coffee?", "answer": "Slightly. Decaffeination changes how the bean roasts, so decaf is usually a little milder. A good decaf still shows the character of its origin." }
+      ]
+    },
+    {
+      "name": "espresso",
+      "match": { "any": ["espresso"], "not": ["machine", "grinder"] },
+      "faqs": [
+        { "question": "What makes a coffee an espresso roast?", "answer": "An espresso roast is developed a little longer so it extracts evenly under pressure and holds up in milk. Any coffee can be brewed as espresso, but these are roasted for it." },
+        { "question": "Can {title} be used for drip or pour over?", "answer": "Yes. It will taste fuller and less bright than a light roast, which many people prefer for drip." },
+        { "question": "What grind size is right for espresso?", "answer": "Fine, close to table salt, then adjusted until a double shot takes roughly 25 to 30 seconds. Grind fresh for each shot if you can." }
+      ]
+    },
+    {
+      "name": "single_origin",
+      "match": { "any": ["single-origin", "ethiopia", "colombia", "kenya", "guatemala"] },
+      "faqs": [
+        { "question": "What does single origin mean?", "answer": "Single origin coffee comes from one country, region or farm instead of a blend. It shows the flavors specific to where it was grown." },
+        { "question": "How should {title} be brewed?", "answer": "Pour over or another filter method shows the most detail. Use water just off the boil and a medium grind, then adjust to taste." },
+        { "question": "How long does roasted coffee stay fresh?", "answer": "Whole bean coffee is at its best in the first few weeks after roasting. Keep it in the sealed bag, away from heat and light, and grind just before brewing." }
+      ]
+    }
+  ]
+}
